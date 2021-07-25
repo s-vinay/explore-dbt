@@ -27,14 +27,14 @@ Considering that we now know what and why dbt let us now get into some technical
 Technically, dbt are simply set of .sql files which when executed through some commands generates transformed models in the warehouse. Below is a simple .sql file and commands used in dbt.
 
 - Example, dbt .sql transformation
+
 _with customers as (
     select id as cust_id,
            first_name,
            last_name
     from {{ source('jaffle_shop', 'Customers') }}
-)_
-
-select * from customers
+)
+select * from customers_
 
 ### Markdown
 
