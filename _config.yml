@@ -1,2 +1,3 @@
 theme: jekyll-theme-slate
 title: dbt learning series
+description: data build tool for transformation of data in your warehouse
