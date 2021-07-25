@@ -6,6 +6,12 @@ Data build tool (called **dbt** going forward) is a cloud based tool for transfo
 - Part-2: installing packages with an example
 - Part-3: performing tests using popular package dbt-expectations
 
+Before we deep dive into each of these parts it is important to call-out the pre-requisites for this learning series.
+
+- knowledge of SQL
+- Python data structures like list and dictionaries
+- knowledge of Jinja template design is an added advantage
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
