@@ -39,7 +39,7 @@ with customers as (
 select * from customers
 ```
 
-The code above is simply preparing a temporary customers table by renaming "id" column as "cust_id", first_name and last_name as it is from the data warehouse source table "Customers". Then selects all data from the temporary table using the select * query.
+`The code above is simply preparing a temporary customers table by renaming "id" column as "cust_id", first_name and last_name as it is from the data warehouse source table "Customers". Then selects all data from the temporary table using the select * query.`
 
 - Commands in dbt are used to perform actions on the .sql files. To generate a model in the data warehouse use "dbt run". Similary to run some tests on a model the command is "dbt test". There are other options that can be used with each of the commands and several other commands also exist, but we keep it simple for now.
 
