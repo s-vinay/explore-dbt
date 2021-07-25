@@ -28,13 +28,14 @@ Technically, dbt are simply set of .sql files which when executed through some c
 
 - Example, dbt .sql transformation
 
-_with customers as (
-    select id as cust_id,
-           first_name,
-           last_name
-    from {{ source('jaffle_shop', 'Customers') }}
-)
-select * from customers_
+    _with customers as (
+        select id as cust_id,
+               first_name,
+               last_name
+        from {{ source('jaffle_shop', 'Customers') }}
+    )
+
+    select * from customers_
 
 ### Markdown
 
