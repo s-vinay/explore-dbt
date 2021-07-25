@@ -18,6 +18,8 @@ Let us now get into action.
 
 Business users always need some historical data to run some analytics for their day-to-day decisions. Some of the examples of analytical decisions are potential customer churn, top / bottom-10 customers, product return analysis, price forecasting and many more. The source data for all such reporting / analytics is in general available in business transactional systems like an ERP or a custom-designed application. This source data needs to be **E**xtracted, **T**ransformed and **L**oaded (called ETL) into data warehouses such as Google Bigquery, Snowflake, AWS Redshift or others.
 
+dbt plays the role of tranforming data which is the **"T"** of the ETL. The traditional methodology of sequentially performing ETL is now transformed by dbt into ELT. In other words, dbt reads the loaded data, performs necessary transformations and generates models into warehouse.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
