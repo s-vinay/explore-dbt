@@ -15,7 +15,7 @@ Before we deep dive into each of these parts it is important to call-out the pre
 Let us now get into action.
 
 **Part-1: What dbt can offer and why dbt?**
-
+Business users always need some historical data to run some analytics for their day-to-day decisions. Some of the examples of analytical decisions are potential customer churn, top / bottom-10 customers, product return analysis, price forecasting and many more. The source data for all such reporting / analytics is in general available in business transactional systems like an ERP or a custom-designed application. This source data needs to be **E**xtracted, **T**ransformed and **L**oaded (called ETL) into data warehouses such as Google Bigquery, Snowflake, AWS Redshift or others.
 
 ### Markdown
 
