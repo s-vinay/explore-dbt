@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## dbt - Transform data in your Warehouse
 
 You can use the [editor on GitHub](https://github.com/s-vinay/explore-dbt/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
