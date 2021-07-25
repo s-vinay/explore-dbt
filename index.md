@@ -1,6 +1,6 @@
 ## dbt - Transform data in your Warehouse
 
-Data build tool (called **dbt** going forward) is a cloud based tool for transforming data in your warehouse. The transformed data is the model on which users run their queries for drawing insights to make informed decisions. This learning is a 3-part series and details covered in each part is outlined below.
+Data build tool (called **dbt** going forward) is a tool for transforming data in your warehouse. The transformed data is the model on which users run their queries for drawing insights to make informed decisions. This learning is a 3-part series and details covered in each part is outlined below.
 
 - Part-1: what dbt can offer and why dbt ?
 - Part-2: installing packages with an example
@@ -9,7 +9,7 @@ Data build tool (called **dbt** going forward) is a cloud based tool for transfo
 Before we deep dive into each of these parts it is important to call-out the pre-requisites for this learning series.
 
 - knowledge of SQL
-- Python data structures like list and dictionaries
+- data structures like list and dictionaries
 - knowledge of Jinja template design is an added advantage
 
 Let us now get into action.
@@ -33,12 +33,12 @@ with customers as (
     select id as cust_id,
            first_name,
            last_name
-    from {{ source('jaffle_shop', 'Customers') }}
+    from jaffle_shop.Customers
 )
 
 select * from customers
 ```
 
-`The code above is simply preparing a temporary customers table by renaming "id" column as "cust_id", first_name and last_name as it is from the data warehouse source table "Customers". Then selects all data from the temporary table using the select * query.`
+`The code above is simply preparing a temporary customers table by renaming "id" column as "cust_id", first_name and last_name as it is from the data warehouse source table "Customers" (jaffle_shop is the database name in the data warehouse which holds the Customers table). Then selects all data from the temporary table using the select * query.`
 
 - Commands in dbt are used to perform actions on the .sql files. To generate a model in the data warehouse use "dbt run". Similary to run some tests on a model the command is "dbt test". There are other options that can be used with each of the commands and several other commands also exist, but we keep it simple for now.
