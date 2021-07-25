@@ -20,6 +20,22 @@ Business users always need some historical data to run some analytics for their 
 
 dbt plays the role of tranforming data which is the **"T"** of the ETL. The traditional methodology of sequentially performing ETL is now transformed by dbt into ELT. In other words, dbt reads the loaded data, performs necessary transformations and generates models into warehouse.
 
+The transformations performed on data could range from a simple user understood column name to complex mathematical calculations into new columns which could be queried directly by the users for analysis.
+
+Considering that we now know what and why dbt let us now get into some technical details.
+
+Technically, dbt are simply set of .sql files which when executed through some commands generates transformed models in the warehouse. Below is a simple .sql file and commands used in dbt.
+
+- Example, dbt .sql transformation
+_with customers as (
+    select id as cust_id,
+           first_name,
+           last_name
+    from {{ source('jaffle_shop', 'Customers') }}
+)_
+
+select * from customers
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
