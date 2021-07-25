@@ -12,6 +12,11 @@ Before we deep dive into each of these parts it is important to call-out the pre
 - Python data structures like list and dictionaries
 - knowledge of Jinja template design is an added advantage
 
+Let us now get into action.
+
+**Part-1: What dbt can offer and why dbt?**
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
