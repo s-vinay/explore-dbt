@@ -29,14 +29,14 @@ Technically, dbt are simply set of .sql files which when executed through some c
 - Example, dbt .sql transformation
 
 ```
-_with customers as (
+with customers as (
     select id as cust_id,
            first_name,
            last_name
     from {{ source('jaffle_shop', 'Customers') }}
-)_
+)
 
-_select * from customers_
+select * from customers
 ```
 
 The code above is simply preparing a temporary customers table by renaming "id" column as "cust_id", first_name and last_name as it is from the data warehouse source table "Customers". Then selects all data from the temporary table using the select * query.
