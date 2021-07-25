@@ -1,8 +1,10 @@
 ## dbt - Transform data in your Warehouse
 
-You can use the [editor on GitHub](https://github.com/s-vinay/explore-dbt/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Data build tool (called **dbt** going forward) is a cloud based tool for transforming data in your warehouse. The transformed data is the model on which users run their queries for drawing insights to make informed decisions. This learning is a 3-part series and details covered in each part is outlined below.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Part-1: what dbt can offer and why dbt ?
+Part-2: installing packages with an example
+Part-3: performing tests using popular package dbt-expectations
 
 ### Markdown
 
